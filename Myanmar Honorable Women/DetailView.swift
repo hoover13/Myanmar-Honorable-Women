@@ -60,5 +60,5 @@ struct DetailView: View {
 }
 
 #Preview {
-    DetailView(person: Person(personName: "Aung San Suu Kyi", imageName: "aung sann su kyi", arImageName: "", career: "Leader", biography: "Aung San Suu Kyi is the pre-democracy opposition leader in Myanmar, formerly known as Burma. She has been kept under detention for most of the past two decades."))
+    DetailView(person: Person(personName: "Aung San Suu Kyi", imageName: "aung sann su kyi", arImageName: "", career: "Leader", biography: ""))
 }

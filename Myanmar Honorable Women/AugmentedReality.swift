@@ -61,7 +61,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         
         if let imageAnchor = anchor as? ARImageAnchor {
             
-            print(imageAnchor.referenceImage.name)
+//            print(imageAnchor.referenceImage.name)
             
             let imageSize = imageAnchor.referenceImage.physicalSize
             
@@ -87,10 +87,12 @@ struct AugmentedRealityView: View {
     @State var selectedARImageName: String
     var body: some View {
         ZStack {
-            ARViewContainer(selectedARImageName: selectedARImageName)
-                .edgesIgnoringSafeArea(.all)
-            
-            Text("Place your device in landscape mode for better experience.")
+            VStack {
+                ARViewContainer(selectedARImageName: selectedARImageName)
+                    .edgesIgnoringSafeArea(.all)
+                Spacer()
+                Text("Place your device in landscape mode for better experience.")
+            }
         }
     }
 }

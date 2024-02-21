@@ -1,0 +1,16 @@
+{
+  "images" : [
+    {
+      "filename" : "1dollarbill.jpeg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "unit" : "inches",
+    "width" : 6.1399999999999997
+  }
+}

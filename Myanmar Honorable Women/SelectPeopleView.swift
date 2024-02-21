@@ -33,31 +33,40 @@ struct SelectPeopleView: View {
                             } label: {
                                 ZStack {
                                     Image("row")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
                                     HStack(alignment: .center) {
                                         Image(person.imageName)
                                             .resizable()
-                                            .frame(width: 50, height: 50)
+                                            .aspectRatio(contentMode: .fit)
+                                            .frame(width: 150, height: 150)
+                                            .clipShape(Circle())
+                                            .overlay(Circle().stroke(Color.white, lineWidth: 4))
+                                            .shadow(radius: 10)
+                                        
                                         
                                         
                                         VStack {
                                             Text(person.personName)
+                                                .bold()
                                             
                                             Text(person.career)
-                                              
+                                            
                                         }
                                     }
                                 }
+                                .padding()
                                 .foregroundStyle(.black)
                             }
                         }
                     }
                     
-    //                Spacer()
-    //                HStack {
-    //                    Image("bottomLeftFrame")
-    //                    Spacer()
-    //                    Image("bottomRightFrame")
-    //                }
+                    //                Spacer()
+                    //                HStack {
+                    //                    Image("bottomLeftFrame")
+                    //                    Spacer()
+                    //                    Image("bottomRightFrame")
+                    //                }
                 }
                 .ignoresSafeArea()
             }
