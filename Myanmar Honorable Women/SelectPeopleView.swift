@@ -31,15 +31,16 @@ struct SelectPeopleView: View {
                             NavigationLink {
                                 DetailView(person: person)
                             } label: {
-                                ZStack {
+                              //  ZStack {
                                     Image("row")
                                         .resizable()
                                         .aspectRatio(contentMode: .fit)
-                                    HStack(alignment: .center) {
+                                        .overlay {
+                                    HStack(alignment: .center, spacing: 20) {
                                         Image(person.imageName)
                                             .resizable()
                                             .aspectRatio(contentMode: .fit)
-                                            .frame(width: 150, height: 150)
+                                            .frame(width: 100, height: 100)
                                             .clipShape(Circle())
                                             .overlay(Circle().stroke(Color.white, lineWidth: 4))
                                             .shadow(radius: 10)
@@ -50,7 +51,10 @@ struct SelectPeopleView: View {
                                             Text(person.personName)
                                                 .bold()
                                             
+                                            
                                             Text(person.career)
+                                                .font(.caption2)
+                                                .frame(width: 120)
                                             
                                         }
                                     }

@@ -22,30 +22,37 @@ struct DetailView: View {
                         Image("topLeftFrame")
                         Spacer()
                         Image("topRightFrame")
+                        
                     }
                     
-                    Image("biography")
-                    
-                    ZStack {
-                        Image("letter")
-                            .resizable()
+                   
                         
+                        Image("biography")
                         
-                        VStack {
-                            Image(person.imageName)
+                        ZStack {
+                            Image("letter")
                                 .resizable()
-                                .frame(width: 50, height: 50)
-                                
-                            Text(person.personName)
                             
-                            Text(person.career)
+                            ScrollView {
+                                VStack {
+                                    Image(person.imageName)
+                                        .resizable()
+                                        .frame(width: 50, height: 50)
+                                    
+                                    Text(person.personName)
+                                    
+                                    Text(person.career)
+                                    
+                                    Text(person.biography)
+                                    
+                                }
+                            }
+                            .padding(.horizontal, 80)
                             
-                            Text(person.biography)
-                             
                         }
-                        .padding(.horizontal, 80)
-                        
-                    }
+                    
+                   
+                    
                     
                     NavigationLink {
                         AugmentedRealityView(selectedARImageNameForMMK: person.arImageNameMMK, selectedARImageNameForUSD: person.arImageNameUSD)
