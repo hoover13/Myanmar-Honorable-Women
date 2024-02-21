@@ -48,7 +48,7 @@ struct DetailView: View {
                     }
                     
                     NavigationLink {
-                        AugmentedRealityView(selectedARImageNameForMMK: person.arImageName, selectedARImageNameForUSD: )
+                        AugmentedRealityView(selectedARImageNameForMMK: person.arImageNameMMK, selectedARImageNameForUSD: person.arImageNameUSD)
                     } label: {
                         Image("see Magic")
                     }
@@ -60,5 +60,5 @@ struct DetailView: View {
 }
 
 #Preview {
-    DetailView(person: Person(personName: "Aung San Suu Kyi", imageName: "aung sann su kyi", arImageName: "", career: "Leader", biography: ""))
+    DetailView(person: Person(personName: "Aung San Suu Kyi", imageName: "aung sann su kyi", arImageNameMMK: "", arImageNameUSD: "", career: "Leader", biography: ""))
 }

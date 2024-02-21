@@ -71,15 +71,29 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
             
             let overlayPlane = SCNPlane(width: imageSize.width, height: imageSize.height)
             
-            let imageName = selectedARImageName ?? "defaultAssetName"
+            if imageAnchor.referenceImage.name == "MMK" {
+                let imageName = selectedARImageNameForMMK ?? "defaultAssetName"
+                
+                overlayPlane.firstMaterial?.diffuse.contents = UIImage(named: imageName)
+                
+                let overlayNode = SCNNode(geometry: overlayPlane)
+                
+                overlayNode.eulerAngles.x  = -Float.pi/2
+                
+                node.addChildNode(overlayNode)
+            }
             
-            overlayPlane.firstMaterial?.diffuse.contents = UIImage(named: imageName)
-            
-            let overlayNode = SCNNode(geometry: overlayPlane)
-            
-            overlayNode.eulerAngles.x  = -Float.pi/2
-            
-            node.addChildNode(overlayNode)
+            if imageAnchor.referenceImage.name == "USD" {
+                let imageName = selectedARImageNameForUSD ?? "defaultAssetName"
+                
+                overlayPlane.firstMaterial?.diffuse.contents = UIImage(named: imageName)
+                
+                let overlayNode = SCNNode(geometry: overlayPlane)
+                
+                overlayNode.eulerAngles.x  = -Float.pi/2
+                
+                node.addChildNode(overlayNode)
+            }
             
         }
         
