@@ -8,17 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		16355EBB2B859F1200D9F4F7 /* Myanmar_Honorable_WomenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16355EBA2B859F1200D9F4F7 /* Myanmar_Honorable_WomenApp.swift */; };
-		16355EBD2B859F1200D9F4F7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16355EBC2B859F1200D9F4F7 /* ContentView.swift */; };
 		16355EBF2B859F1400D9F4F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16355EBE2B859F1400D9F4F7 /* Assets.xcassets */; };
 		16355EC22B859F1400D9F4F7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16355EC12B859F1400D9F4F7 /* Preview Assets.xcassets */; };
+		16355ECF2B85A18600D9F4F7 /* AugmentedReality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16355EC82B85A18600D9F4F7 /* AugmentedReality.swift */; };
+		16355ED12B85A18600D9F4F7 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16355ECA2B85A18600D9F4F7 /* StartView.swift */; };
+		16355ED22B85A18600D9F4F7 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16355ECB2B85A18600D9F4F7 /* Person.swift */; };
+		16355ED32B85A18600D9F4F7 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16355ECC2B85A18600D9F4F7 /* DetailView.swift */; };
+		16355ED42B85A18600D9F4F7 /* SelectPeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16355ECD2B85A18600D9F4F7 /* SelectPeopleView.swift */; };
+		16FF99CD2B85A69000C5B1E7 /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FF99CC2B85A69000C5B1E7 /* DiscoverView.swift */; };
+		16FF99CF2B85A69900C5B1E7 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FF99CE2B85A69900C5B1E7 /* ExploreView.swift */; };
+		16FF99D12B85A6A000C5B1E7 /* OnBoardingTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FF99D02B85A6A000C5B1E7 /* OnBoardingTabView.swift */; };
+		16FF99D32B85A6A500C5B1E7 /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FF99D22B85A6A500C5B1E7 /* ScanView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		16355EB72B859F1200D9F4F7 /* Myanmar Honorable Women.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Myanmar Honorable Women.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		16355EBA2B859F1200D9F4F7 /* Myanmar_Honorable_WomenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Myanmar_Honorable_WomenApp.swift; sourceTree = "<group>"; };
-		16355EBC2B859F1200D9F4F7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		16355EBE2B859F1400D9F4F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16355EC12B859F1400D9F4F7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		16355EC82B85A18600D9F4F7 /* AugmentedReality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AugmentedReality.swift; sourceTree = "<group>"; };
+		16355ECA2B85A18600D9F4F7 /* StartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		16355ECB2B85A18600D9F4F7 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		16355ECC2B85A18600D9F4F7 /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		16355ECD2B85A18600D9F4F7 /* SelectPeopleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectPeopleView.swift; sourceTree = "<group>"; };
+		16FF99CC2B85A69000C5B1E7 /* DiscoverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
+		16FF99CE2B85A69900C5B1E7 /* ExploreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		16FF99D02B85A6A000C5B1E7 /* OnBoardingTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingTabView.swift; sourceTree = "<group>"; };
+		16FF99D22B85A6A500C5B1E7 /* ScanView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +67,13 @@
 		16355EB92B859F1200D9F4F7 /* Myanmar Honorable Women */ = {
 			isa = PBXGroup;
 			children = (
+				16FF99D42B85A6B700C5B1E7 /* OnBoarding Screens */,
 				16355EBA2B859F1200D9F4F7 /* Myanmar_Honorable_WomenApp.swift */,
-				16355EBC2B859F1200D9F4F7 /* ContentView.swift */,
+				16355EC82B85A18600D9F4F7 /* AugmentedReality.swift */,
+				16355ECC2B85A18600D9F4F7 /* DetailView.swift */,
+				16355ECB2B85A18600D9F4F7 /* Person.swift */,
+				16355ECD2B85A18600D9F4F7 /* SelectPeopleView.swift */,
+				16355ECA2B85A18600D9F4F7 /* StartView.swift */,
 				16355EBE2B859F1400D9F4F7 /* Assets.xcassets */,
 				16355EC02B859F1400D9F4F7 /* Preview Content */,
 			);
@@ -65,6 +86,17 @@
 				16355EC12B859F1400D9F4F7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		16FF99D42B85A6B700C5B1E7 /* OnBoarding Screens */ = {
+			isa = PBXGroup;
+			children = (
+				16FF99CE2B85A69900C5B1E7 /* ExploreView.swift */,
+				16FF99CC2B85A69000C5B1E7 /* DiscoverView.swift */,
+				16FF99D22B85A6A500C5B1E7 /* ScanView.swift */,
+				16FF99D02B85A6A000C5B1E7 /* OnBoardingTabView.swift */,
+			);
+			path = "OnBoarding Screens";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +169,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16355EBD2B859F1200D9F4F7 /* ContentView.swift in Sources */,
+				16355ED22B85A18600D9F4F7 /* Person.swift in Sources */,
+				16355ED42B85A18600D9F4F7 /* SelectPeopleView.swift in Sources */,
+				16355ED12B85A18600D9F4F7 /* StartView.swift in Sources */,
+				16355ED32B85A18600D9F4F7 /* DetailView.swift in Sources */,
+				16FF99D12B85A6A000C5B1E7 /* OnBoardingTabView.swift in Sources */,
+				16FF99CD2B85A69000C5B1E7 /* DiscoverView.swift in Sources */,
+				16355ECF2B85A18600D9F4F7 /* AugmentedReality.swift in Sources */,
+				16FF99D32B85A6A500C5B1E7 /* ScanView.swift in Sources */,
+				16FF99CF2B85A69900C5B1E7 /* ExploreView.swift in Sources */,
 				16355EBB2B859F1200D9F4F7 /* Myanmar_Honorable_WomenApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,11 +315,13 @@
 				DEVELOPMENT_TEAM = MGX4V5XP6T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "\"Enable camera access to view in AR\"";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,11 +346,13 @@
 				DEVELOPMENT_TEAM = MGX4V5XP6T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "\"Enable camera access to view in AR\"";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
