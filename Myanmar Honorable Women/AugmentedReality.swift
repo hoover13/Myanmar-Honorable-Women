@@ -10,11 +10,14 @@ import ARKit
 
 
 struct ARViewContainer: UIViewControllerRepresentable {
-    var selectedARImageName: String
+    var selectedARImageNameForMMK: String
+    var selectedARImageNameForUSD: String
     
     func makeUIViewController(context: Context) -> ARViewController {
         let viewController = ARViewController()
-        viewController.selectedARImageName = self.selectedARImageName // Pass selectedName to ARViewController
+        viewController.selectedARImageNameForMMK = self.selectedARImageNameForMMK
+        viewController.selectedARImageNameForUSD = self.selectedARImageNameForUSD
+        
         return viewController
     }
     
@@ -25,7 +28,8 @@ struct ARViewContainer: UIViewControllerRepresentable {
 
 class ARViewController: UIViewController, ARSCNViewDelegate {
     var sceneView: ARSCNView!
-    var selectedARImageName: String?
+    var selectedARImageNameForMMK: String?
+    var selectedARImageNameForUSD: String?
     
     override func loadView() {
         sceneView = ARSCNView(frame: .zero)
@@ -62,7 +66,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         if let imageAnchor = anchor as? ARImageAnchor {
             
 //            print(imageAnchor.referenceImage.name)
-            
+           
             let imageSize = imageAnchor.referenceImage.physicalSize
             
             let overlayPlane = SCNPlane(width: imageSize.width, height: imageSize.height)
@@ -84,11 +88,13 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
 }
 
 struct AugmentedRealityView: View {
-    @State var selectedARImageName: String
+    @State var selectedARImageNameForMMK: String
+    @State var selectedARImageNameForUSD: String
+    
     var body: some View {
         ZStack {
             VStack {
-                ARViewContainer(selectedARImageName: selectedARImageName)
+                ARViewContainer(selectedARImageNameForMMK: selectedARImageNameForMMK, selectedARImageNameForUSD: selectedARImageNameForUSD)
                     .edgesIgnoringSafeArea(.all)
                 Spacer()
                 Text("Place your device in landscape mode for better experience.")

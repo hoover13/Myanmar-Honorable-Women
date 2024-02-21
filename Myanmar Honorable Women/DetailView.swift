@@ -48,7 +48,7 @@ struct DetailView: View {
                     }
                     
                     NavigationLink {
-                        AugmentedRealityView(selectedARImageName: person.arImageName)
+                        AugmentedRealityView(selectedARImageNameForMMK: person.arImageName, selectedARImageNameForUSD: )
                     } label: {
                         Image("see Magic")
                     }
