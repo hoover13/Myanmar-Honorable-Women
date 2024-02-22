@@ -66,15 +66,7 @@ struct SelectPeopleView: View {
                             }
                         }
                     }
-                    
-                    //                Spacer()
-                    //                HStack {
-                    //                    Image("bottomLeftFrame")
-                    //                    Spacer()
-                    //                    Image("bottomRightFrame")
-                    //                }
                 }
-                
             }
         }
     }

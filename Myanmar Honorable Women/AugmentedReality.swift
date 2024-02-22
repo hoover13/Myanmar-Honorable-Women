@@ -58,21 +58,18 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         sceneView.session.pause()
     }
     
-    // ARSCNViewDelegate methods...
     func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {
         
         let node = SCNNode()
         
         if let imageAnchor = anchor as? ARImageAnchor {
-            
-//            print(imageAnchor.referenceImage.name)
            
             let imageSize = imageAnchor.referenceImage.physicalSize
             
             let overlayPlane = SCNPlane(width: imageSize.width, height: imageSize.height)
             
             if imageAnchor.referenceImage.name == "MMK" {
-                let imageName = selectedARImageNameForMMK ?? "defaultAssetName"
+                let imageName = selectedARImageNameForMMK ?? ""
                 
                 overlayPlane.firstMaterial?.diffuse.contents = UIImage(named: imageName)
                 
@@ -84,7 +81,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
             }
             
             if imageAnchor.referenceImage.name == "USD" {
-                let imageName = selectedARImageNameForUSD ?? "defaultAssetName"
+                let imageName = selectedARImageNameForUSD ?? ""
                 
                 overlayPlane.firstMaterial?.diffuse.contents = UIImage(named: imageName)
                 

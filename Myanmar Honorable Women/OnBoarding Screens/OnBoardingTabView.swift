@@ -42,9 +42,6 @@ struct OnBoardingTabView: View {
                         
                     }
                     .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
-//                    .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
-//                    .frame(maxHeight: .infinity)
-                    
                     
                     Button(action: {
                         if tabSelection == 2 {
