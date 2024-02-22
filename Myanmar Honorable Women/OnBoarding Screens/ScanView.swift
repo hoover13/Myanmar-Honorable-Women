@@ -15,7 +15,7 @@ struct ScanView: View {
             
             Image("scanText")
             
-            Text("Scan a 1000 Myanmar kyat note or a US 1 dollar bill in landscape mode to reveal the image in Augmented Reality")
+            Text("Scan a 1000 Myanmar kyat bill or a US 1 dollar bill in landscape mode to reveal the image in Augmented Reality")
                 .multilineTextAlignment(.center)
                 .bold()
         }

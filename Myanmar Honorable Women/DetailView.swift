@@ -24,35 +24,40 @@ struct DetailView: View {
                         Image("topRightFrame")
                         
                     }
+                    Spacer()
+                }
+                .ignoresSafeArea()
+                
+                VStack {
+                    Image("biography")
                     
-                   
-                        
-                        Image("biography")
-                        
+                    GeometryReader { geo in
                         ZStack {
+                            
                             Image("letter")
                                 .resizable()
-                            
-                            ScrollView {
-                                VStack {
-                                    Image(person.imageName)
-                                        .resizable()
-                                        .frame(width: 50, height: 50)
-                                    
-                                    Text(person.personName)
-                                    
-                                    Text(person.career)
-                                    
-                                    Text(person.biography)
-                                    
-                                }
+                        }
+                        
+                        ScrollView {
+                            VStack(alignment: .center)  {
+                                Image(person.imageName)
+                                    .resizable()
+                                    .frame(width: 50, height: 50)
+                                
+                                Text(person.personName)
+                                
+                                Text(person.career)
+                                
+                                Text(person.biography)
+                                
                             }
-                            .padding(.horizontal, 80)
                             
                         }
-                    
-                   
-                    
+                        .frame(width: geo.size.width * 0.58, height: geo.size.height * 0.8)
+                        .offset(y: +55)
+                        .padding(.horizontal, 80)
+                        
+                    }
                     
                     NavigationLink {
                         AugmentedRealityView(selectedARImageNameForMMK: person.arImageNameMMK, selectedARImageNameForUSD: person.arImageNameUSD)
@@ -60,12 +65,11 @@ struct DetailView: View {
                         Image("see Magic")
                     }
                 }
-                .ignoresSafeArea()
             }
         }
     }
 }
 
 #Preview {
-    DetailView(person: Person(personName: "Aung San Suu Kyi", imageName: "aung sann su kyi", arImageNameMMK: "", arImageNameUSD: "", career: "Leader", biography: ""))
+    DetailView(person: Person(personName: "Aung San Suu Kyi", imageName: "aung sann su kyi", arImageNameMMK: "", arImageNameUSD: "", career: "Leader", biography: "aung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyiaung sann su kyi"))
 }
