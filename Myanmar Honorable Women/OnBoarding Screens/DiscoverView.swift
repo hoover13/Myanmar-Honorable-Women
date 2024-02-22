@@ -16,6 +16,7 @@ struct DiscoverView: View {
             Image("discoverText")
             
             Text("Explore the lives of remarkable Myanmar women who have made history. Choose a heroine to discover more.")
+                .foregroundStyle(.black)
                 .multilineTextAlignment(.center)
                 .bold()
         }

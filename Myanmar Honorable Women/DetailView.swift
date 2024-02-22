@@ -51,6 +51,7 @@ struct DetailView: View {
                                 Text(person.biography)
                                 
                             }
+                            .foregroundStyle(.black)
                             
                         }
                         .frame(width: geo.size.width * 0.58, height: geo.size.height * 0.8)
@@ -59,10 +60,19 @@ struct DetailView: View {
                         
                     }
                     
-                    NavigationLink {
-                        AugmentedRealityView(selectedARImageNameForMMK: person.arImageNameMMK, selectedARImageNameForUSD: person.arImageNameUSD)
-                    } label: {
-                        Image("see Magic")
+                    HStack(spacing: 30) {
+                        NavigationLink {
+                            SelectPeopleView()
+                                .navigationBarBackButtonHidden()
+                        } label: {
+                            Image("back")
+                        }
+                        
+                        NavigationLink {
+                            AugmentedRealityView(selectedARImageNameForMMK: person.arImageNameMMK, selectedARImageNameForUSD: person.arImageNameUSD)
+                        } label: {
+                            Image("see Magic")
+                        }
                     }
                 }
             }

@@ -16,6 +16,7 @@ struct ExploreView: View {
             Image("exploreText")
             
             Text("Learn about the life of your chosen honorable woman including her biography, accomplishments, and the impact she made on society")
+                .foregroundStyle(.black)
                 .multilineTextAlignment(.center)
                 .bold()
         }
