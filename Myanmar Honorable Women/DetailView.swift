@@ -31,52 +31,51 @@ struct DetailView: View {
                 VStack {
                     Image("biography")
                     
-                    GeometryReader { geo in
-                        ZStack {
-                            
-                            Image("letter")
-                                .resizable()
-                        }
+                    ScrollView {
+                        Image(person.imageName)
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: 100, height: 100)
+                            .clipShape(Circle())
+                            .shadow(radius: 10)
                         
-                        ScrollView {
-                            VStack(alignment: .center)  {
-                                Image(person.imageName)
-                                    .resizable()
-                                    .frame(width: 50, height: 50)
-                                
-                                Text(person.personName)
-                                
-                                Text(person.career)
-                                
-                                Text(person.biography)
-                                
-                            }
-                            .foregroundStyle(.black)
-                            
-                        }
-                        .frame(width: geo.size.width * 0.58, height: geo.size.height * 0.8)
-                        .offset(y: +55)
-                        .padding(.horizontal, 80)
+                        Text(person.personName)
+                            .font(.system(size: 50))
+                            .bold()
                         
+                        Text(person.career)
+                            .font(.largeTitle)
+                            .bold()
+                        
+                        Text(person.biography)
+                            .font(.title)
                     }
-                    
+                    .padding()
+                    .padding(.horizontal, 50)
+                   
                     HStack(spacing: 30) {
                         NavigationLink {
                             SelectPeopleView()
                                 .navigationBarBackButtonHidden()
+                               
                         } label: {
                             Image("back")
                         }
                         
+                        
                         NavigationLink {
                             AugmentedRealityView(selectedARImageNameForMMK: person.arImageNameMMK, selectedARImageNameForUSD: person.arImageNameUSD)
                         } label: {
-                            Image("see Magic")
+                            Image("view in AR")
                         }
                     }
                 }
+                .foregroundStyle(.black)
+                
+                
             }
         }
+       
     }
 }
 

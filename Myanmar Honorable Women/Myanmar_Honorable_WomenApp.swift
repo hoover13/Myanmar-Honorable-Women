@@ -9,11 +9,15 @@ import SwiftUI
 
 @main
 struct Myanmar_Honorable_WomenApp: App {
-//    @AppStorage("isOnboarding") var isOnboarding: Bool = true
+    @AppStorage("isOnboarding") var isOnboarding: Bool = true
     
     var body: some Scene {
         WindowGroup {
-            OnBoardingTabView()
+            if isOnboarding {
+                OnBoardingTabView()
+            } else {
+                StartView()
+            }
         }
     }
 }

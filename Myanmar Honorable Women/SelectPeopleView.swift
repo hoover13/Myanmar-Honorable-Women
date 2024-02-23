@@ -33,7 +33,7 @@ struct SelectPeopleView: View {
                         ForEach(people) { person in
                             NavigationLink {
                                 DetailView(person: person)
-                                    .navigationBarBackButtonHidden()
+//                                    .navigationBarBackButtonHidden()
                             } label: {
                                 Image("row")
                                     .resizable()
@@ -42,13 +42,11 @@ struct SelectPeopleView: View {
                                         HStack(alignment: .center, spacing: 20) {
                                             Image(person.imageName)
                                                 .resizable()
-                                                .aspectRatio(contentMode: .fit)
+                                                .aspectRatio(contentMode: .fill)
                                                 .frame(width: 100, height: 100)
                                                 .clipShape(Circle())
                                                 .overlay(Circle().stroke(Color.white, lineWidth: 2))
                                                 .shadow(radius: 10)
-                                            
-                                            
                                             
                                             VStack {
                                                 Text(person.personName)
@@ -56,9 +54,7 @@ struct SelectPeopleView: View {
                                                 
                                                 
                                                 Text(person.career)
-                                                    .font(.subheadline)
                                                     .frame(width: 120)
-                                                
                                             }
                                         }
                                     }
@@ -67,9 +63,17 @@ struct SelectPeopleView: View {
                             }
                         }
                     }
+                    
+                    NavigationLink {
+                        StartView()
+                            .navigationBarBackButtonHidden()
+                    } label: {
+                        Image("back")
+                    }
                 }
             }
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
     
 }

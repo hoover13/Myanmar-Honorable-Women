@@ -108,10 +108,18 @@ struct AugmentedRealityView: View {
                 ARViewContainer(selectedARImageNameForMMK: selectedARImageNameForMMK, selectedARImageNameForUSD: selectedARImageNameForUSD)
                     .edgesIgnoringSafeArea(.all)
                 Spacer()
-                Text("Place your device in landscape mode for better experience.")
+                
+                Group {
+                    Text("Place your device in landscape mode for better experience.")
+                    Text("Scan either a $1 US dollar bill, a 1000 Myanmar kyat note, or pictures of them. ")
+                }
+                .padding(.horizontal)
             }
         }
     }
 }
 
+#Preview {
+    AugmentedRealityView(selectedARImageNameForMMK: "", selectedARImageNameForUSD: "")
+}
 

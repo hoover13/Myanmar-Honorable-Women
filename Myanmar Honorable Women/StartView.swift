@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct StartView: View {
+    @AppStorage("isOnboarding") var isOnboarding: Bool?
     var body: some View {
         
         NavigationStack {
@@ -32,9 +33,20 @@ struct StartView: View {
                     
                     NavigationLink {
                         SelectPeopleView()
-                            .navigationBarBackButtonHidden(true)
+                            .toolbarRole(.editor)
+//                            .navigationBarBackButtonHidden(true)
                     } label: {
                         Image("start")
+                    }
+                        
+                    NavigationLink {
+                        OnBoardingTabView()
+                            .navigationBarBackButtonHidden(true)
+                    } label: {
+                        Image("tutorial")
+                            .onTapGesture {
+                                isOnboarding = true
+                            }
                     }
                    
                     Spacer()

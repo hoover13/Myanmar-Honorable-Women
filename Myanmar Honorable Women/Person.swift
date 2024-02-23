@@ -19,7 +19,6 @@ struct Person: Identifiable {
     
 }
 
-
 var people: [Person] = 
 
 [Person(personName: "Aung San Suu Kyi", imageName: "Aung San Suu Kyi", arImageNameMMK: "Aung San Suu Kyi (MMK)", arImageNameUSD: "Aung San Suu Kyi (USD)", career: "State Counsellor", biography: "Aung San Suu Kyi, born in 1945, is a Burmese politician and Nobel laureate. Renowned for her peaceful resistance to authoritarian rule, she led Myanmar's pro-democracy movement, enduring years of house arrest. As the leader of the National League for Democracy, she won international acclaim and the Nobel Peace Prize in 1991.She is the only person from Myanmar who's won a Nobel Prize."),

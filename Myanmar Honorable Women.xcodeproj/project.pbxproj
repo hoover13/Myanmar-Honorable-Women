@@ -15,6 +15,7 @@
 		16355ED22B85A18600D9F4F7 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16355ECB2B85A18600D9F4F7 /* Person.swift */; };
 		16355ED32B85A18600D9F4F7 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16355ECC2B85A18600D9F4F7 /* DetailView.swift */; };
 		16355ED42B85A18600D9F4F7 /* SelectPeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16355ECD2B85A18600D9F4F7 /* SelectPeopleView.swift */; };
+		16680D602B882794003E47F4 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16680D5F2B882794003E47F4 /* CustomButton.swift */; };
 		16FF99CD2B85A69000C5B1E7 /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FF99CC2B85A69000C5B1E7 /* DiscoverView.swift */; };
 		16FF99CF2B85A69900C5B1E7 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FF99CE2B85A69900C5B1E7 /* ExploreView.swift */; };
 		16FF99D12B85A6A000C5B1E7 /* OnBoardingTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FF99D02B85A6A000C5B1E7 /* OnBoardingTabView.swift */; };
@@ -31,6 +32,7 @@
 		16355ECB2B85A18600D9F4F7 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		16355ECC2B85A18600D9F4F7 /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		16355ECD2B85A18600D9F4F7 /* SelectPeopleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectPeopleView.swift; sourceTree = "<group>"; };
+		16680D5F2B882794003E47F4 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		16FF99CC2B85A69000C5B1E7 /* DiscoverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
 		16FF99CE2B85A69900C5B1E7 /* ExploreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
 		16FF99D02B85A6A000C5B1E7 /* OnBoardingTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingTabView.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				16FF99CC2B85A69000C5B1E7 /* DiscoverView.swift */,
 				16FF99D22B85A6A500C5B1E7 /* ScanView.swift */,
 				16FF99D02B85A6A000C5B1E7 /* OnBoardingTabView.swift */,
+				16680D5F2B882794003E47F4 /* CustomButton.swift */,
 			);
 			path = "OnBoarding Screens";
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 				16FF99D12B85A6A000C5B1E7 /* OnBoardingTabView.swift in Sources */,
 				16FF99CD2B85A69000C5B1E7 /* DiscoverView.swift in Sources */,
 				16355ECF2B85A18600D9F4F7 /* AugmentedReality.swift in Sources */,
+				16680D602B882794003E47F4 /* CustomButton.swift in Sources */,
 				16FF99D32B85A6A500C5B1E7 /* ScanView.swift in Sources */,
 				16FF99CF2B85A69900C5B1E7 /* ExploreView.swift in Sources */,
 				16355EBB2B859F1200D9F4F7 /* Myanmar_Honorable_WomenApp.swift in Sources */,
