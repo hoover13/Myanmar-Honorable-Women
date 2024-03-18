@@ -31,6 +31,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
     var selectedARImageNameForMMK: String?
     var selectedARImageNameForUSD: String?
     
+    
     override func loadView() {
         sceneView = ARSCNView(frame: .zero)
         self.view = sceneView
@@ -78,6 +79,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
                 overlayNode.eulerAngles.x  = -Float.pi/2
                 
                 node.addChildNode(overlayNode)
+                print("MMK Detected")
             }
             
             if imageAnchor.referenceImage.name == "USD" {
@@ -90,6 +92,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
                 overlayNode.eulerAngles.x  = -Float.pi/2
                 
                 node.addChildNode(overlayNode)
+                print("USD Detected")
             }
             
         }

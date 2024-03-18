@@ -48,7 +48,9 @@ struct DetailView: View {
                             .bold()
                         
                         Text(person.biography)
-                            .font(.title)
+                            
+
+                        
                     }
                     .padding()
                     .padding(.horizontal, 50)

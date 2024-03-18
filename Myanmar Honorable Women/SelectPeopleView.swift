@@ -33,7 +33,7 @@ struct SelectPeopleView: View {
                         ForEach(people) { person in
                             NavigationLink {
                                 DetailView(person: person)
-//                                    .navigationBarBackButtonHidden()
+                                    .navigationBarBackButtonHidden()
                             } label: {
                                 Image("row")
                                     .resizable()

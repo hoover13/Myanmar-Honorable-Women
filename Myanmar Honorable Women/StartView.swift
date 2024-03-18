@@ -33,8 +33,8 @@ struct StartView: View {
                     
                     NavigationLink {
                         SelectPeopleView()
-                            .toolbarRole(.editor)
-//                            .navigationBarBackButtonHidden(true)
+//                            .toolbarRole(.editor)
+                            .navigationBarBackButtonHidden(true)
                     } label: {
                         Image("start")
                     }
