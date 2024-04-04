@@ -11,4 +11,6 @@ Myanmar Honorable Women app serves as a digital repository of empowering stories
 
 By tapping the "View In AR" button, the app activates the device's camera, overlaying the woman's face onto the physical world in real-time. The magic unfolds when users scan a 1000 Myanmar Kyat or 1 US dollar bill using the camera. As the currency comes into view, the woman's face materializes in augmented reality, bridging the gap between past and present, and bringing history to life in a profoundly engaging manner.
 
+Available on App Store 
+https://apps.apple.com/am/app/myanmar-honorable-women/id6478194467
 <img width="479" alt="Screenshot 2024-04-03 at 4 50 37 PM" src="https://github.com/hoover13/Myanmar-Honorable-Women/assets/64706595/07f71091-70a1-4e06-9905-ad2f3c5fead3">
